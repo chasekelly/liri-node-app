@@ -92,10 +92,8 @@ function doit() {
     		return console.log(error);
   		}
 
-		// Then split it by commas (to make it more readable)
 		var dataArr = data.split(",");
 
-		// Each command is represented. Because of the format in the txt file, remove the quotes to run these commands. 
 		if (dataArr[0] === "spotify-this-song") {
 			var songcheck = dataArr[1].slice(1, -1);
 			spotify(songcheck);
